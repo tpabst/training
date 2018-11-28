@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Quel est la philosophie de git</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/own.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../contrib/deck.js/themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../../contrib/deck.js/core/print.css">
+
+  <!-- prism.js -->
+  <link rel="stylesheet" href="../themes/prism.css">
+
+  <!-- Required Modernizr file -->
+  <script src="../../contrib/deck.js/modernizr.custom.js"></script>
+</head>
+<body class="language-cpp">
+
+  <header>
+      <img src="../medias/git_icon.svg" class="logo">
+  </header>
+
+  <div class="home">
+
+    <article class="deck-container">
+
+  <!--
+  #########################################################################################################
+  # Content
+  #########################################################################################################
+  -->
+
+      <!-------------------------------------------------------------------->
+
+      <section class="slide">
+        <h1>Git : Philosophy</h1>
+        <div class="slide">
+            <!-- <p class="achieve ment">Succès réussi : titre de présentation très long !</p> -->
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>The story</h2>
+        <section>
+          <h3>1991: Linus Torvalds create Linux</h3>
+          <ul>
+            <li class="slide">1991-2002: tarballs and patches</li>
+            <li class="slide">2002: start using proprietary <strong>DVCS</strong> <em>BitKeeper</em></li>
+            <li class="slide">2005: Relations houleuse entre la communauté Linux et la société <em>BitKeeper</em></li>
+            <li class="slide">Révocation de la gratuité accordé au projet Linux</li>
+            <li class="slide"><em>Linus Torvalds</em> à décider de stopper le développement de Linux jusqu'à trouver un remplaçant à <em>BitKeeper</em></li>
+            <li class="slide">Veille technologique</li>
+          </ul>
+        </section>
+        <section class="slide">
+          <h3>How save datas</h3>
+          <ul>
+            <li>zipped / copy</li>
+            <li>Version Control systems (VCS)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="slide">
+        <section>
+            <h2>Local Version Control Systems</h2>
+            <img src="../medias/VCS/LocalVCS.png" style="height: 500px">
+            <section class="slide">
+              <ul>
+                <li>Free/Open-source: SCCS (1972), RCS (1982)</li>
+                <li>Proprietary: PVCS (1985), QVCS (1991)</li>
+              <li><a href="https://en.wikipedia.org/wiki/Version_control">https://en.wikipedia.org/wiki/Version_control</a></li>
+              </ul>
+            </section>
+        </section>
+      </section>
+
+      <section class="slide">
+        <section>
+          <h2>Central Version Control Systems</h2>
+          <img src="../medias/VCS/CentralVCS.png" style="height: 500px">
+          <section class="slide">
+            <ul>
+              <li>Free/Open-source: CVS (1986), Subversion/SVN (2000)...</li>
+              <li>Proprietary: perforce (1995), ClearCase (1992)...</li>
+              <li><a href="https://en.wikipedia.org/wiki/Version_control">https://en.wikipedia.org/wiki/Version_control</a></li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section class="slide">
+        <section>
+          <h2>Distributed Version Control Systems</h2>
+          <img src="../medias/VCS/DistributedVCS.png" style="height: 800px">
+          <section class="slide">
+            <ul>
+                <li>Free/Open-source: Mercurial (2005), <strong>Git (2005)</strong>, Bazzar (2005)...</li>
+              <li>Proprietary: BitKeeper (2000), Team Foundation Server (2013)...</li>
+              <li><a href="https://en.wikipedia.org/wiki/Version_control">https://en.wikipedia.org/wiki/Version_control</a></li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>The story</h2>
+        <section>
+          <h3>1991: Linus Torvalds create Linux</h3>
+          <ul>
+            <li>1991-2002: tarballs and patches</li>
+            <li>2002: start using proprietary <strong>DVCS</strong> <em>BitKeeper</em></li>
+            <li>2005: Relations houleuse entre la communauté Linux et la société <em>BitKeeper</em></li>
+            <li>Révocation de la gratuité accordé au projet Linux</li>
+            <li><em>Linus Torvalds</em> à décider de stopper le développement de Linux jusqu'à trouver un remplaçant à <em>BitKeeper</em></li>
+            <li>Veille technologique</li>
+          </ul>
+          <h3>What is the <em>Linus</em> conclusion ?</h3>
+        </section>
+          <section class="slide">
+              <h1>Make a new software</br> from scratch</h1>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>What now</h2>
+        <section>
+          <h3>Goals</h3>
+          <ul>
+            <li>fast</li>
+            <li>simple design</li>
+            <li>support nonlinear developments (Thousands of branches)</li>
+            <li><strong>fully distributed</strong></li>
+            <li>ability to effectively manage large projects (speed and compactness of data)</li>
+            <li>Trusty</li>
+          </ul>
+        </section>
+        <section class="slide">
+          <h3>Benefits of Distributed Version Control</h3>
+          <ul>
+            <li>Can collaborate without a central authority</li>
+            <li>Disconnected operations</li>
+            <li>Easy branching and merging</li>
+            <li>Define your own workflow</li>
+            <li>Powerful community sharing tools</li>
+            <li>Easier path to contributor to commiter</li>
+            <li>Not have a single point of failure</li>
+          </ul>
+        </section>
+        <section class="slide">
+          <h3>Also</h3>
+          <ul>
+            <li>Forget what you know about VCS</li>
+            <li><em>Linus</em> has no brain dammages by 30 years of VCS practice</li>
+            <li>Git is like a minimalistic filesystem with very powerfull tools built on it</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Git Basics - Snapshots, Not Differences</h2>
+        <section class="slide">
+          <h3>other VCS</h3>
+          <img src="../medias/VCS/deltas.png" style="height: 400px">
+        </section>
+        <section class="slide">
+          <h3>Git</h3>
+          <img src="../medias/VCS/snapshots.png" style="height: 400px">
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Git Basics - Nearly Every Operation Is Local</h2>
+          <ul>
+            <li>complete history</li>
+            <li>no network transaction</li>
+            <li>so it's fast</li>
+          </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Git Basics - Git has Integrity</h2>
+        <ul>
+          <li>everything in Git is checksummed</li>
+          <li>SHA-1 hash: This is a 40-character string (hexadecimal)</br>
+              <code>24b9da6552252987aa493b52f8696cd6d3b00373</code>
+          </li>
+          <li>Git stores everthing in its database by the hash value of its contents</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Git Basics - Git generally only adds data</h2>
+          <ul>
+            <li>nearly all actions in Git only add data to the Git database</li>
+            <li>So nearly all done on git are undoable</li>
+          </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Git Basics - The Three States</h2>
+          <img src="../medias/VCS/areas.png" style="height: 400px">
+          <ul>
+            <li>commmited</li>
+            <li>modified</li>
+            <li>staged</li>
+          </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Git vs SVN</h2>
+        <section>
+          <img src="../medias/VCS/svn_vs_git.png" style="height: 800px">
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Distributed Git - Distributed Workflows</h2>
+        <section>
+          <h3>Centralized Workflow</h3>
+          <img src="../medias/VCS/centralized_workflow.png" style="height: 800px">
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Distributed Git - Distributed Workflows</h2>
+        <section>
+          <h3>Integration Manager Workflow</h3>
+          <img src="../medias/VCS/integration-manager.png" style="height: 800px">
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Distributed Git - Distributed Workflows</h2>
+        <section>
+          <h3>Dictator and Lieutenants workflow</h3>
+          <img src="../medias/VCS/benevolent-dictator.png" style="height: 800px">
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Distributed Git - Distributed Workflows</h2>
+        <section>
+          <h3>More</h3>
+          <ul>
+            <li>Branch Workflow by Fonctionality</li>
+            <li>Workflow Gitflow <a href="https://datasift.github.io/gitflow/IntroducingGitFlow.html">https://datasift.github.io/gitflow/IntroducingGitFlow.html</a></li>
+            <li>Full Distributed</li>
+            <li>Forking Workflow - Pull Request</li>
+            <li>...</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Even More with third tools</h3>
+          <ul>
+            <li>Gerrit</li>
+            <li>Jenkins</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Git Hosted Service</h2>
+        <section>
+          <ul>
+            <li>GitHub</li>
+            <li>Gitlab</li>
+            <li>Bitbucket (Atlassian)</li>
+            <li>Coding</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-------------------------------------------------------------------->
+
+      <section class="slide">
+        <h1>Start using Git  </h1>
+        <div class="slide">
+            <!-- <p class="achievement">Succès réussi : titre de présentation très long !</p> -->
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Command line vs Gui</h2>
+        <section>
+          <ul>
+            <li>Command line: the only place you can run <strong>all</strong> Git commands</li>
+            <li>Gui: implement only partial subset of Git functionality</li>
+            <li>Swithing to gui from command line is easier, the opposite not</li>
+            <li>Gui: matter of personal taste</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Most known Gui</h2>
+        <section>
+        <h3>free/open-source</h3>
+          <ul>
+            <li>git-gui (built-in)</li>
+            <li>gitk (built-in)</li>
+            <li>tig</li>
+            <li>tortoiseGit</li>
+            <li>...</li>
+          </ul>
+        </section>
+        <section>
+        <h3>proprietary</h3>
+          <ul>
+            <li>GitKraken</li>
+            <li>SmartGit</li>
+            <li>...</li>
+          </ul>
+        </section>
+        <section>
+        <h3>Many target</h3>
+          <ul>
+            <li>GNU/Linux</li>
+            <li>Windows</li>
+            <li>Mac</li>
+            <li>Android</li>
+            <li>iOS</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li><a href="https://git-scm.com/download/gui/linux">https://git-scm.com/download/gui/linux</a></li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>First use</h2>
+        <section>
+            <h3>Installation</h3>
+            <code>$ apt-get install git-all</code>
+        </section>
+        <section>
+            <h3>Configuration</h3>
+            <p><strong>git config:</strong> get and set configuration variables that contol all aspects of how Git looks and operates</p>
+            <p>These variables can be stored in 3 different places:</p>
+          <ul>
+              <li><strong>system:</strong> <code>/etc/gitconfig</code></li>
+              <li><strong>global:</strong> <code>~/.gitconfig</code></li>
+              <li><strong>local:</strong> <code>.git/config</code></li>
+          </ul>
+        </section>
+        <section>
+            <p><code>$ git config --global user.name "John Doe"</code></br>
+                <code>$ git config --global user.email "john.doe@sample.com"</code></p>
+
+            <p><code>$ git config --global core.editor.vim"</code></p>
+
+            <p><code>$ git config --list"</code></br>
+            <code>$ git config user.name"</code></p>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>First use</h2>
+        <section>
+          <h3>Help</h3>
+          <p>
+              <code>$ git help &ltcommande&gt</code></br>
+              <code>$ git &ltcommande&gt --help</code></br>
+              <code>$ man git-&ltcommande&gt</code>
+          </p>
+        </section>
+        <section>
+          <h3>Start a new repository</h3>
+          <p>
+              <code>$ git init</code></br>
+              <code>$ git add &ltfiles&gt</code></br>
+              <code>$ git commit -m "initial project version"</code>
+          </p>
+        </section>
+        <section>
+          <h3>Clone an existing repository</h3>
+          <p>
+              <code>$ git clone https://github.com/foo/bar</code></br>
+              <code>bar</code>
+          </p>
+          <p>
+              <code>$ git clone --bare https://github.com/foo/bar</code></br>
+              <code>bar.git</code>
+          </p>
+          <p>
+              <code>$ git clone https://github.com/foo/bar myOwnTitleBar</code></br>
+              <code>myOwnTitleBar</code>
+          </p>
+          <h3>Clone from where: Available transfert protocols:</h3>
+          <p>
+            <code>ssh://</code>
+            <code>git://</code>
+            <code>http://</code>
+            <code>https://</code>
+            <code>file://</code>
+          </p>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>common alias</h2>
+        <section>
+            <code>
+                [alias]</br>
+    ci = commit</br>
+    co = checkout</br>
+    st = status</br>
+    br = branch</br>
+    staged = diff --cached</br>
+    unstaged = reset HEAD --</br>
+    fix = commit --amend --no-edit # just add add index to previous ci</br>
+    fixe = commit --amend # fix & e(dit)</br>
+    cleanall = clean -fd</br>
+    tip = log -n 1 --abbrev-commit --decorate</br>
+    glog = log --oneline --decorate --graph</br>
+    glogs = log --decorate --graph --all -5</br>
+    glogf = log --oneline --decorate --graph --all</br>
+    glogd = log --oneline --decorate --graph --all --date-order</br>
+            </code>
+        </section>
+      </section>
+
+      <section class="slide">
+        <h2>Basis commands</h2>
+        <section>
+          <ul>
+            <li><code>git add</code></li>
+            <li><code>git commit</code></li>
+            <li><code>git status</code></li>
+            <li><code>git log</code></li>
+            <li><code>git show</code></li>
+            <li><code>git checkout</code></li>
+            <li><code>git diff</code></li>
+            <li><code>git remote</code></li>
+            <li><code>git fetch</code></li>
+            <li><code>git pull</code></li>
+            <li><code>git branch</code></li>
+            <li><code>git tag</code></li>
+            <li><code>git merge</code></li>
+            <li><code>git rebase</code></li>
+            <li><code>git cherry-pick</code></li>
+            <li><code>git stash</code></li>
+            <li><code>git mv</code></li>
+            <li><code>git rm</code></li>
+          </ul>
+        </section>
+        </section>
+
+      <section class="slide">
+        <h2>Other commands</h2>
+        <section>
+          <ul>
+            <li><code>git grep</code></li>
+            <li><code>git bisect</code></li>
+            <li><code>git format-patch</code></li>
+            <li><code>git apply</code></li>
+            <li><code>git revert</code></li>
+            <li><code>git blame</code></li>
+            <li><code>git clean</code></li>
+          </ul>
+        </section>
+      </section>
+
+      <!--
+      <section class="slide">
+        <h2>foo</h2>
+        <section>
+          <ul>
+            <li>bar</li>
+          </ul>
+        </section>
+      </section>
+      ->
+
+      <!-------------------------------------------------------------------->
+
+      <section class="slide">
+        <h1>Questions ?</h1>
+        <div class="slide">
+            <!-- <p class="achievement">Succès réussi : titre de présentation très long !</p> -->
+        </div>
+      </section>
+
+      <!-------------------------------------------------------------------->
+
+      <section class="slide">
+        <h2>Références</h2>
+        <section>
+          <h3>Git</h3>
+          <ul>
+            <li><a href="https://git-scm.com/">https://git-scm.com/</a></li>
+            <li><a href="https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools">https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools</a></li>
+            <li><a href="https://git-scm.com/download/gui/linux">https://git-scm.com/download/gui/linux</a></li>
+            <li><a href="http://ndpsoftware.com/git-cheatsheet.html">http://ndpsoftware.com/git-cheatsheet.html</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Pro git</h3>
+          <ul>
+            <li><a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a></li>
+            <li><a href="https://git-scm.com/book/fr/v2">https://git-scm.com/book/fr/v2</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Tech Talk: Linux Torvalds on git (2007)</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/watch\?v\=4XpnKHJAok8">https://www.youtube.com/watch\?v\=4XpnKHJAok8</a></li>
+          </ul>
+        </section>
+      </section>
+
+  <!--
+  #########################################################################################################
+  # End of content
+  #########################################################################################################
+  -->
+
+      <!-- Begin extension snippets. Add or remove as needed. -->
+
+      <!-- deck.navigation snippet -->
+      <div aria-role="navigation">
+        <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+        <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+      </div>
+
+      <!-- deck.status snippet -->
+      <p class="deck-status" aria-role="status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+      </p>
+
+      <!-- deck.goto snippet -->
+      <form action="." method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+      </form>
+
+      <!-- End extension snippets. -->
+
+    </article>
+
+  </div>
+
+  <footer>
+    <h3>Thomas PABST - thomas.pabst@gmail.com</h3>
+  </footer>
+
+  <!-- Required JS files. -->
+  <script src="../../contrib/deck.js/jquery.min.js"></script>
+  <script src="../../contrib/deck.js/core/deck.core.js"></script>
+
+  <!-- Extension JS files. Add or remove as needed. -->
+  <script src="../../contrib/deck.js/extensions/menu/deck.menu.js"></script>
+  <script src="../../contrib/deck.js/extensions/goto/deck.goto.js"></script>
+  <script src="../../contrib/deck.js/extensions/status/deck.status.js"></script>
+  <script src="../../contrib/deck.js/extensions/navigation/deck.navigation.js"></script>
+  <script src="../../contrib/deck.js/extensions/scale/deck.scale.js"></script>
+
+  <!-- Initialize the deck. You can put this in an external file if desired. -->
+  <script>
+    $(function() {
+      $.deck('.slide');
+    });
+  </script>
+
+  <!-- prism.js -->
+  <script src="../../themes/prism.js"></script>
+
+</body>
+</html>
